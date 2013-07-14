@@ -16,6 +16,9 @@
 		ACCC12201793199D00230BFF /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = ACCC121F1793199D00230BFF /* Default.png */; };
 		ACCC12221793199D00230BFF /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ACCC12211793199D00230BFF /* Default@2x.png */; };
 		ACCC12241793199D00230BFF /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ACCC12231793199D00230BFF /* Default-568h@2x.png */; };
+		ACCC1233179319DB00230BFF /* GLEUContext.m in Sources */ = {isa = PBXBuildFile; fileRef = ACCC122E179319DB00230BFF /* GLEUContext.m */; };
+		ACCC1234179319DB00230BFF /* GLEUVertexAttributeArrayBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = ACCC1230179319DB00230BFF /* GLEUVertexAttributeArrayBuffer.m */; };
+		ACCC1235179319DB00230BFF /* GLKEffectPropertyTexture+GLEUEffectPropertyTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = ACCC1232179319DB00230BFF /* GLKEffectPropertyTexture+GLEUEffectPropertyTexture.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,13 @@
 		ACCC121F1793199D00230BFF /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		ACCC12211793199D00230BFF /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		ACCC12231793199D00230BFF /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		ACCC122C179319DB00230BFF /* GLEU.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLEU.h; sourceTree = "<group>"; };
+		ACCC122D179319DB00230BFF /* GLEUContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLEUContext.h; sourceTree = "<group>"; };
+		ACCC122E179319DB00230BFF /* GLEUContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLEUContext.m; sourceTree = "<group>"; };
+		ACCC122F179319DB00230BFF /* GLEUVertexAttributeArrayBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLEUVertexAttributeArrayBuffer.h; sourceTree = "<group>"; };
+		ACCC1230179319DB00230BFF /* GLEUVertexAttributeArrayBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLEUVertexAttributeArrayBuffer.m; sourceTree = "<group>"; };
+		ACCC1231179319DB00230BFF /* GLKEffectPropertyTexture+GLEUEffectPropertyTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GLKEffectPropertyTexture+GLEUEffectPropertyTexture.h"; sourceTree = "<group>"; };
+		ACCC1232179319DB00230BFF /* GLKEffectPropertyTexture+GLEUEffectPropertyTexture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GLKEffectPropertyTexture+GLEUEffectPropertyTexture.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +88,7 @@
 		ACCC12131793199D00230BFF /* Intro To Lighting */ = {
 			isa = PBXGroup;
 			children = (
+				ACCC122B179319DB00230BFF /* GLEU */,
 				ACCC121C1793199D00230BFF /* ITLAppDelegate.h */,
 				ACCC121D1793199D00230BFF /* ITLAppDelegate.m */,
 				ACCC12141793199D00230BFF /* Supporting Files */,
@@ -99,6 +110,21 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		ACCC122B179319DB00230BFF /* GLEU */ = {
+			isa = PBXGroup;
+			children = (
+				ACCC122C179319DB00230BFF /* GLEU.h */,
+				ACCC122D179319DB00230BFF /* GLEUContext.h */,
+				ACCC122E179319DB00230BFF /* GLEUContext.m */,
+				ACCC122F179319DB00230BFF /* GLEUVertexAttributeArrayBuffer.h */,
+				ACCC1230179319DB00230BFF /* GLEUVertexAttributeArrayBuffer.m */,
+				ACCC1231179319DB00230BFF /* GLKEffectPropertyTexture+GLEUEffectPropertyTexture.h */,
+				ACCC1232179319DB00230BFF /* GLKEffectPropertyTexture+GLEUEffectPropertyTexture.m */,
+			);
+			name = GLEU;
+			path = ../GLEU;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,6 +132,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ACCC12271793199D00230BFF /* Build configuration list for PBXNativeTarget "Intro To Lighting" */;
 			buildPhases = (
+				ACCC122A179319B100230BFF /* ShellScript */,
 				ACCC12061793199D00230BFF /* Sources */,
 				ACCC12071793199D00230BFF /* Frameworks */,
 				ACCC12081793199D00230BFF /* Resources */,
@@ -160,6 +187,22 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		ACCC122A179319B100230BFF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/bash\nbN=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$INFOPLIST_FILE\")\nbN=$((0x$bN))\nbN=$(($bN + 1))\nbN=$(printf \"%X\" $bN)\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $bN\" \"$INFOPLIST_FILE\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		ACCC12061793199D00230BFF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -167,6 +210,9 @@
 			files = (
 				ACCC121A1793199D00230BFF /* main.m in Sources */,
 				ACCC121E1793199D00230BFF /* ITLAppDelegate.m in Sources */,
+				ACCC1233179319DB00230BFF /* GLEUContext.m in Sources */,
+				ACCC1234179319DB00230BFF /* GLEUVertexAttributeArrayBuffer.m in Sources */,
+				ACCC1235179319DB00230BFF /* GLKEffectPropertyTexture+GLEUEffectPropertyTexture.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
