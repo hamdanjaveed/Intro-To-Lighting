@@ -19,6 +19,11 @@
 		ACCC1233179319DB00230BFF /* GLEUContext.m in Sources */ = {isa = PBXBuildFile; fileRef = ACCC122E179319DB00230BFF /* GLEUContext.m */; };
 		ACCC1234179319DB00230BFF /* GLEUVertexAttributeArrayBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = ACCC1230179319DB00230BFF /* GLEUVertexAttributeArrayBuffer.m */; };
 		ACCC1235179319DB00230BFF /* GLKEffectPropertyTexture+GLEUEffectPropertyTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = ACCC1232179319DB00230BFF /* GLKEffectPropertyTexture+GLEUEffectPropertyTexture.m */; };
+		ACCC123817931A2100230BFF /* ITLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACCC123717931A2100230BFF /* ITLViewController.m */; };
+		ACCC123F17931A5600230BFF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACCC123D17931A4600230BFF /* QuartzCore.framework */; };
+		ACCC124017931A5600230BFF /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACCC123917931A4100230BFF /* GLKit.framework */; };
+		ACCC124117931A5600230BFF /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACCC123A17931A4100230BFF /* OpenGLES.framework */; };
+		ACCC124317931A7000230BFF /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACCC124217931A7000230BFF /* iPhone.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +47,12 @@
 		ACCC1230179319DB00230BFF /* GLEUVertexAttributeArrayBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLEUVertexAttributeArrayBuffer.m; sourceTree = "<group>"; };
 		ACCC1231179319DB00230BFF /* GLKEffectPropertyTexture+GLEUEffectPropertyTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GLKEffectPropertyTexture+GLEUEffectPropertyTexture.h"; sourceTree = "<group>"; };
 		ACCC1232179319DB00230BFF /* GLKEffectPropertyTexture+GLEUEffectPropertyTexture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GLKEffectPropertyTexture+GLEUEffectPropertyTexture.m"; sourceTree = "<group>"; };
+		ACCC123617931A2100230BFF /* ITLViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITLViewController.h; sourceTree = "<group>"; };
+		ACCC123717931A2100230BFF /* ITLViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITLViewController.m; sourceTree = "<group>"; };
+		ACCC123917931A4100230BFF /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		ACCC123A17931A4100230BFF /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		ACCC123D17931A4600230BFF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		ACCC124217931A7000230BFF /* iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhone.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +60,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACCC123F17931A5600230BFF /* QuartzCore.framework in Frameworks */,
+				ACCC124017931A5600230BFF /* GLKit.framework in Frameworks */,
+				ACCC124117931A5600230BFF /* OpenGLES.framework in Frameworks */,
 				ACCC120E1793199D00230BFF /* UIKit.framework in Frameworks */,
 				ACCC12101793199D00230BFF /* Foundation.framework in Frameworks */,
 				ACCC12121793199D00230BFF /* CoreGraphics.framework in Frameworks */,
@@ -78,6 +92,9 @@
 		ACCC120C1793199D00230BFF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				ACCC123D17931A4600230BFF /* QuartzCore.framework */,
+				ACCC123917931A4100230BFF /* GLKit.framework */,
+				ACCC123A17931A4100230BFF /* OpenGLES.framework */,
 				ACCC120D1793199D00230BFF /* UIKit.framework */,
 				ACCC120F1793199D00230BFF /* Foundation.framework */,
 				ACCC12111793199D00230BFF /* CoreGraphics.framework */,
@@ -89,8 +106,9 @@
 			isa = PBXGroup;
 			children = (
 				ACCC122B179319DB00230BFF /* GLEU */,
-				ACCC121C1793199D00230BFF /* ITLAppDelegate.h */,
-				ACCC121D1793199D00230BFF /* ITLAppDelegate.m */,
+				ACCC123617931A2100230BFF /* ITLViewController.h */,
+				ACCC123717931A2100230BFF /* ITLViewController.m */,
+				ACCC124217931A7000230BFF /* iPhone.storyboard */,
 				ACCC12141793199D00230BFF /* Supporting Files */,
 			);
 			path = "Intro To Lighting";
@@ -99,6 +117,8 @@
 		ACCC12141793199D00230BFF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				ACCC121C1793199D00230BFF /* ITLAppDelegate.h */,
+				ACCC121D1793199D00230BFF /* ITLAppDelegate.m */,
 				ACCC12151793199D00230BFF /* Intro To Lighting-Info.plist */,
 				ACCC12161793199D00230BFF /* InfoPlist.strings */,
 				ACCC12191793199D00230BFF /* main.m */,
@@ -182,6 +202,7 @@
 				ACCC12201793199D00230BFF /* Default.png in Resources */,
 				ACCC12221793199D00230BFF /* Default@2x.png in Resources */,
 				ACCC12241793199D00230BFF /* Default-568h@2x.png in Resources */,
+				ACCC124317931A7000230BFF /* iPhone.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,6 +234,7 @@
 				ACCC1233179319DB00230BFF /* GLEUContext.m in Sources */,
 				ACCC1234179319DB00230BFF /* GLEUVertexAttributeArrayBuffer.m in Sources */,
 				ACCC1235179319DB00230BFF /* GLKEffectPropertyTexture+GLEUEffectPropertyTexture.m in Sources */,
+				ACCC123817931A2100230BFF /* ITLViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
